@@ -17,6 +17,7 @@ public class EducationResource {
         this.educationService = educationService;
     }
 
+    @CrossOrigin(origins = "http://localhost:5000")
     @GetMapping("/all")
     public ResponseEntity<List<Education>> getAllEducation () {
         List<Education> education = educationService.findAllEducation();
