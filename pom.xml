@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.miproyectoyoprogramo</groupId>
 	<artifactId>portfoliowebsite</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>portfoliowebsite</name>
 	<description>Proyecto Portfolio Web Fullstack Jr.</description>
 	<properties>
