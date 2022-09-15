@@ -17,7 +17,7 @@ public class EducationResource {
         this.educationService = educationService;
     }
 
-    @CrossOrigin(origins = "http://localhost:5000")
+    @CrossOrigin(origins = "https://aptpfinal-portfolioback.herokuapp.com//education/all")
     @GetMapping("/all")
     public ResponseEntity<List<Education>> getAllEducation () {
         List<Education> education = educationService.findAllEducation();
