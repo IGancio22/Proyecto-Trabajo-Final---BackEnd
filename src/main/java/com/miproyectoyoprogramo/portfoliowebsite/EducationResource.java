@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/education")
 public class EducationResource {
@@ -17,7 +18,6 @@ public class EducationResource {
         this.educationService = educationService;
     }
 
-    @CrossOrigin(origins = "https://aptpfinal-portfolioback.herokuapp.com//education/all")
     @GetMapping("/all")
     public ResponseEntity<List<Education>> getAllEducation () {
         List<Education> education = educationService.findAllEducation();
